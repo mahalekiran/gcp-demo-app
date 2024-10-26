@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/gcp-demo-project-439809/gcp-demo-repo/gcp-demo-app', '.']
+  args: ['build', '-t', 'asia-south1-docker.pkg.dev/analytical-poet-439812-s7/gcp-demo-repo/gcp-demo-app', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/gcp-demo-project-439809/gcp-demo-repo/gcp-demo-app']
+  args: ['push', 'asia-south1-docker.pkg.dev/analytical-poet-439812-s7/gcp-demo-repo/gcp-demo-app']
 images:
-- 'us-central1-docker.pkg.dev/gcp-demo-project-439809/gcp-demo-repo/gcp-demo-app'
+- 'asia-south1-docker.pkg.dev/analytical-poet-439812-s7/gcp-demo-repo/gcp-demo-app'
 options:
   logging: CLOUD_LOGGING_ONLY
   #peep
